@@ -1,1 +1,4 @@
+Stock filter=lfs diff=lfs merge=lfs -text
+Modeling/ETFsCombined.csv filter=lfs diff=lfs merge=lfs -text
+Modeling/StocksCombined.csv filter=lfs diff=lfs merge=lfs -text
 *.csv filter=lfs diff=lfs merge=lfs -text
