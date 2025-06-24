@@ -1,0 +1,44 @@
+Things to Do / Problems That need to be solved 
+
+
+1. Work On Recognizing Card 
+    Potentially - Create a Blank Card, and Super impose the Icons (Suit / Value) into the correct locations. 
+
+2. This would need to work to identify both Card, Value, Deck, Mults. Then Generate Stats of the Results of what would be the best idea. 
+3. Identify Number of Cards in Deck. 
+    This is an issue that would need to be able to be tracked since the beginning.
+    All Decks are Generated Statically (Except Two)
+    Keep a Grasp on Number of Cards, then when adding new cards add this to the overall list (Based Upon the Deck), then using that can generate stats. 
+
+
+4. How to Generate Training Data (See 1)
+    As mentioned in 1, the solution would be to generate cards (Blank Cards, Potentially DIfferent Types of Cards (See the Different Card Types))
+
+5. Generate the Masks for each card to then pull what would be needed from them
+    Needed this for 
+    1. Suits
+    2. Seals
+    3. Card Value (2 - 10, J, Q, K, A)
+
+
+6. Should I Add an additional role / input which would create the images to train based upon the sizing of the Game? Because this will effect how this is done. 
+    - Could potentially start a max ratio , then just scale it down based upon the images that are being used, so 1980 x 1980 would then scale down based upon what they
+    end up using 
+    - Could also just make one for each and then just reference them with an idnetifier / or just path based upon the ratio ? (would be more work) 
+        - Could use this as a proof of concept 
+
+
+
+
+
+Things Solved / Working On 
+1. July 1st - 31st 
+    - Got the Images / References 
+    - Generated the Images / Seals 
+    - Created a Function / method to get the specific subsets of the cards when new things are added 
+    - Generate methods to create the ending's needed 
+
+
+2. August 1st - ? 
+    - Working on Generating the template / blank card for placing the Values, Suits, Seals (then creating a method to make the txt files) 
+    - 

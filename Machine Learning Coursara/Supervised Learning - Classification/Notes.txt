@@ -1,0 +1,64 @@
+Classification Types
+1. Log Regression
+2. K-Nearest Neighbers
+3. Support Vector 
+4. Neural Networks
+5. Decision Tree
+6. Random Forests
+7. Boosting
+8. Ensemble Models
+
+
+Logistic Regression
+    - What is ? 
+        Features (upwards from 1) vs Results (Output - (True/False, Churn))
+
+        Sigmoid Function - Produces a Resulting line wrapping around a single point (so flattening a  0 - 1 line making the center flatter)
+    - Linear vs Logistic Regression
+
+        Logistic Regression = e / (1 + e) Odds ratio when scaled based upon going from multiple outcomes or starting. from 0 -> Infinity 
+Logistic Regression [Multi Class]
+     Multi Class Classification (Multi Results possible)
+        1 vs All -> Seperating A vs Rest, then B vs Rest in the previous segmentations. then you keep doing this which causes Three Logistic regression problems 
+
+Syntax 
+
+Librarys Logistic REgression from SkLearn
+
+model_name (can chose) = LogisticRegression(Penalty = 'l2', c =10.0) [C Regularization Constant, Higher C = less penalty]
+model_name = model_name.fit(X_train, Y_train)
+y_predict = model_name.predict(X_test)
+
+model_name.coef -> to get the outputs 
+
+logisticRegressionCV (helps reuglarize the results)
+
+
+
+Classification Error (Types of Results) - 
+                |Predicted Positive|Predicted Negative|
+Actual Positive |TP                |FN                |
+Actual Negative |FP                |TN                |
+
+    1. Confusion Matrix 
+        This is a square making up the correspoding results of Actual Results vs Predicted Results [This creates a square], Type 1 Error Falso Positive, Type 2 Error False NEgative
+    2. Acurracy 
+        Utlizing the Confusion Matrix = True Positive + True Negative / Total [AKA How mcuh was actually Correctly predicted] (population may be squid)
+    3. Specifcity
+        False Alarms - How correct is the Actual Negative correct (True Negative / Falsoe Positive True Negative)
+    4. Precision 
+        True Positives / True Positive vs False Postive [Out of all the predictied positive results, how many were actually right, kind of the inverse of Recall]
+    5. Recall
+        True Positives / True Positives + False Negatives [Get the precentage of the population that was Predicted True Postive out of the Actual Results, vs Predicted results. Capture Rate]
+    F1 = 2 * Precision * Recall / Precision + Recall 
+Classification Error Met
+
+    1. ROC - Balanced Classes
+        indicates the senstivity (X Axis = Fals Positive Rate [1-Specificity]) , (Y Axis = True positive Rate [Sensitivity])
+        Looks at predicited probability of the resulting output in a percentage. 
+        Based upon where things are placed can give good insight on where the output would be. You would want it to be towarsd the top left of the graph (resulting in a Curve)  
+    2. Precision-Recall Curves - Data with inbalanced classes 
+        X Axis = Recall, Y Axis = Precision
+        Provides results in Visualziation on if an output is getting high recall vs low precision. 
+
+
