@@ -2,5 +2,5 @@ Stock filter=lfs diff=lfs merge=lfs -text
 Modeling/ETFsCombined.csv filter=lfs diff=lfs merge=lfs -text
 Modeling/StocksCombined.csv filter=lfs diff=lfs merge=lfs -text
 C:/Users/scott/Documents/Projects filter=lfs diff=lfs merge=lfs -text
-project-to-do/* filter = lfs diff=lfd merge =lfs -text
+"Project-To-Do/Stock Modeling/Data/*" filter=lfs diff=lfs merge =lfs -text
 *.csv filter=lfs diff=lfs merge=lfs -text
