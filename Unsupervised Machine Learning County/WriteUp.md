@@ -76,3 +76,29 @@ The best result was gamma of 0.5 and a number of components of 9. After re runni
 
 
 ![image desc](Kernal_PCA_Graph.png)
+
+
+
+**MDS Multi Dimensional Scaling** 
+
+To Reduce the Number of Dimensions down. 
+
+In Comparision to PCA and Kernel the Number of Compnoents that was used was 9 then chosen the final, and then from that you would utilize the best captured columns based upon variance. Unfortuently MDS doesn't work the same way. It's goal is to protect the distances between values and features. So We'll be using Stress as a good indicator of results. 
+
+Below shows a slight divergance from PCA and Kernal, showing that around 7 components produce the best resultss, and additional values only resudce the stress minimally. 
+
+![image desc](MDS_Results.png)
+
+
+
+![image desc](MDS_Graph.png)
+
+
+
+
+# Results / Conclusion 
+
+PCA and Kernal PCA both produced an outcome where when feature selecting I found that 5 features post PCA (Kernal and Other) produced enough of data sets variance and Feature weights. While when using MDS, it showed that 7 features (reduction) was the most optimal, in regards to reducing the features. I believe that in terms of Feature Reduction I would chose PCA (non kernal). MDS and Kernel both produced useful results, but PCA was able to account for more of the data with fewer actual columns itself. Such as at 4 Features, PCA produced 93 variance, while for Kernal it was 0.82. And for MDS there was a 196 stress, which is way to high for me to accept as a valaid reduction. 
+
+
+
